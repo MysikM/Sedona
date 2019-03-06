@@ -2,23 +2,26 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Sedona</title>
   </head>
   <body>
     <header class="header index_header">
-          <nav>
+          <nav class="container1">
             <ul class="navigation">
               <li class="list"><a href="#" class="link">Информация</a></li>
-              <li class="list"><a href="#" class="link">Фото и видео</a></li>
+              <li class="list"><a href="#" class="link sorved">Фото и видео</a></li>
               <li class="list"><a href="#" class="link">Карта штата</a></li>
               <li class="list"><a href="#" class="link">Гостиницы</a></li>
             </ul>
-            <img class="logo.png" src="logo_png" alt="Logotip">
+            <a class="logo" href="#">
+                <img class="img__logo" src="img/logo.png" alt="Logotip">
+            </a>
           </nav>
-          <img class="background" src="background_header.jpg" alt="Sedona welcome">
+          <img class="img__back" width="1200px" src="img/background_header.jpg" alt="Sedona welcome">
           <div class="text-on-background">
-              <b class="title">СЕДОНА — небольшой городок в АРИЗОНЕ,
+              <b class="title">СЕДОНА — небольшой городок в АРИЗОНЕ, <br>
                               зАСЛУЖИвающий большего!
               </b>
               <p class="discription">
@@ -41,7 +44,7 @@
                     СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
                   </p>
             </div>
-            <img src="n1.jpg" alt="Фото лагеря">
+            <img src="img/n1.jpg" alt="Фото лагеря">
         </section>
         <section class="list__featches">
             <ul>
@@ -72,7 +75,7 @@
             </ul>
         </section>
         <section class="bridge">
-            <img src="n2.jpg" alt="Фото моста дьявола">
+            <img src="img/n2.jpg" alt="Фото моста дьявола">
             <div class="discription">
                 <b class="title">
                   ТАМ ЕСТЬ
@@ -143,7 +146,7 @@
             </button>
         </section>
         <section class="map">
-            <img src="map.jpg" alt="Карта">
+            <img src="img/map.jpg" alt="Карта">
         </section>
     </main>
     <footer class="footer">
@@ -159,5 +162,25 @@
           Mysik
         </a>
     </footer>
+
+    <section class="write-us">
+          <label>
+              Дата заезда:
+              <input type="date" name="zaezd">
+              <span class="icon__calendar"></span>
+          </label>
+          <label>
+              Дата выезда:
+              <input type="date" name="viezd">
+              <span class="icon__calendar"></span>
+          </label>
+          <label>
+              Взрослые
+          </label>
+          <label>
+              Дети
+          </label>
+          <button type="button" name="button">Найти</button>
+    </section>
   </body>
 </html>

@@ -1,3 +1,70 @@
 body{
-  background-color: black;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+ul{
+  list-style: none;
+  color: black;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.header{
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.header .container1{
+  width: 1156px;
+}
+.header .navigation{
+  display: flex;
+  justify-content: space-between;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5px;
+}
+.header .navigation .link{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.header .logo{
+  display: inline-block;
+  position: relative;
+  top: -62px;
+  left: 540px;
+}
+.header .img__back{
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: -80px;
+}
+.header .text-on-background{
+  display: block;
+  position: relative;
+}
+.header .text-on-background .title{
+  position: absolute;
+  bottom: 220px;
+  left: 359px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.header .text-on-background .discription{
+  position: absolute;
+  line-height: 26px;
+  bottom: 220px;
+  left: 359px;
+}
+
+.write-us{
+    display: none;
 }
