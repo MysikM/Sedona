@@ -1,12 +1,22 @@
+/* @font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+} */
 body{
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0 auto;
+  width: 1200px;
 }
 ul{
   list-style: none;
   color: black;
+  padding: 0;
+  margin: 0;
 }
 a{
   text-decoration: none;
@@ -20,6 +30,7 @@ a{
 }
 .header .container1{
   width: 1156px;
+  margin: 0 auto;
 }
 .header .navigation{
   display: flex;
@@ -28,7 +39,7 @@ a{
   -ms-flex-direction: row;
   flex-direction: row;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 .header .navigation .link{
   font-size: 14px;
@@ -38,13 +49,13 @@ a{
 .header .logo{
   display: inline-block;
   position: relative;
-  top: -62px;
-  left: 540px;
+  top: -46px;
+  left: 525px;
 }
 .header .img__back{
   width: 1200px;
   margin: 0 auto;
-  margin-top: -80px;
+  margin-top: -60px;
 }
 .header .text-on-background{
   display: block;
@@ -52,18 +63,111 @@ a{
 }
 .header .text-on-background .title{
   position: absolute;
-  bottom: 220px;
-  left: 359px;
+  bottom: 120px;
+  left: 380px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  text-align: center;
 }
 .header .text-on-background .discription{
   position: absolute;
   line-height: 26px;
-  bottom: 220px;
-  left: 359px;
+  bottom: 55px;
+  left: 355px;
 }
+
+.main .real_town .container,
+.main .bridge .container{
+  width: 1200px;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+}
+.real_town .discription,
+.bridge .discription{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #81b3d2;
+  color: white;
+  padding: 0 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.real_town .discription .title,
+.bridge .discription .title{
+  font-size: 21px;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+.real_town .discription .discript,
+.beidge .discription .discript{
+  margin-top: 20px;
+}
+.main .list__featches .container ul,
+.main .attractions .container ul{
+  width: 1200px;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+.list__featches .list,
+.attractions .list{
+  width: 400px;
+  padding: 0 65px;
+  color: #333333;
+}
+.list__featches .list{
+  padding: 0 50px !important;
+}
+.attractions .container{
+  background-color: #eeeeee;
+}
+.list__featches .text,
+.attractions .text{
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+}
+.main .interested{
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.interested .title{
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 50px;
+}
+.interested .discription{
+  line-height: 26px;
+  margin-top: 32px;
+}
+.interested .button{
+  border: none;
+  background-color: #766357;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 26px;
+  padding: 17px 140px;
+  margin-top: 50px;
+}
+
 
 .write-us{
     display: none;
