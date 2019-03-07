@@ -9,8 +9,16 @@ body{
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  margin: 0 auto;
+
+  background-color: #f2f2f2;
+}
+.contain{
   width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0,1,1,0.2);
+-moz-box-shadow: 0px 5px 15px 0px rgba(0,1,1,0.2);
+box-shadow: 0px 5px 15px 0px rgba(0,1,1,0.2);
 }
 ul{
   list-style: none;
@@ -29,7 +37,7 @@ a{
   flex-direction: column;
 }
 .header .container1{
-  width: 1156px;
+  width: 1056px;
   margin: 0 auto;
 }
 .header .navigation{
@@ -46,11 +54,28 @@ a{
   line-height: 26px;
   font-weight: bold;
 }
+.header .navigation .list_2{
+  padding-right: 60px;
+}
+.header .navigation .list_3{
+  padding-left: 60px;
+}
+.header .navigation .link:hover,
+.header .navigation .link:focus{
+  color: #81b3d2;
+}
+.header .navigation .link:active{
+  opacity: 0.3;
+  color:black;
+}
+.header .navigation .link.sorved{
+  color: #766357;
+}
 .header .logo{
   display: inline-block;
   position: relative;
   top: -46px;
-  left: 525px;
+  left: 462px;
 }
 .header .img__back{
   width: 1200px;
@@ -180,6 +205,15 @@ a{
   line-height: 26px;
   padding: 17px 140px;
   margin-top: 50px;
+  cursor: pointer;
+}
+.interested .button:hover,
+.interested .button:focus{
+  background-color: #604e43;
+}
+.interested .button:active{
+  background-color: #503e33;
+  color: #857871;
 }
 .cont{
   height: 0;
@@ -198,7 +232,7 @@ a{
   padding-bottom: 35px;
   background-color: white;
   position: relative;
-  bottom: 100px;
+  bottom: 120px;
   opacity: 0.9;
 
 }
@@ -208,10 +242,7 @@ a{
   line-height: 26px;
   font-weight: bold;
 }
-.footer .icon{
-  background-color: #81b3d2;
-  padding: 13px 14px;
-}
+
 .footer .icon__list{
   width: 150px;
   display: flex;
@@ -221,6 +252,18 @@ a{
   justify-content: space-between;
   align-items: center;
 }
+.footer .icon{
+  background-color: #81b3d2;
+  padding: 13px 14px;
+}
+.footer .icon:hover,
+.footer .icon:focus{
+  background-color: #669ec0;
+}
+.footer .icon:active{
+  background-color: #5496bd;
+  fill:#88b6d1;
+}
 .footer .icon__list .twitter{
   padding: 16px 14px 13px 15px;
 }
@@ -228,14 +271,110 @@ a{
   padding: 12px 17px 10px 17px;;
 }
 .footer .Mysik{
-color: black;
+  color: black;
+}
+.footer .Mysik:hover,
+.footer .Mysik:focus,
+.footer .hash:hover,
+.footer .hash:focus{
+ color: #669ec0;
+}
+.footer .Mysik:active,
+.footer .hash:active{
+  opacity: 0.5;
 }
 .footer .icon__list .youtube{
-  padding: 14px 14px;
+  padding: 14px 14px 14px;
 }
 
 
 
 .write-us{
-    display: none;
+    display: block;
+    width: 574px;
+}
+.write-us .container{
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 55px 60px;
+}
+.write-us .container .date{
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+}
+.write-us .container .input{
+  width: 345px;
+  box-sizing: border-box;
+  padding: 13px;
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}
+.write-us .container .input:hover,
+.write-us .container .input:focus{
+  background-color: #ebebeb;
+}
+.write-us .container .input::placeholder{
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+.write-us .container .con{
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+
+}
+.write-us .container .search{
+  display: inline-block;
+  margin-top: 52px;
+  font-size: 21px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #81b3d2;
+  font-weight: bold;
+  color: white;
+  padding: 16px 0 17px;
+  cursor: pointer;
+}
+.write-us .container .search:hover{
+  background-color: #669ec0;
+}
+,
+.write-us .container .search:focus{
+  background-color: white;
+  border: 2px solid #e5e5e5;
+}
+.write-us .container .search:active{
+  background-color: #5496bd;
+  color:#88b6d1;
+}
+
+.write-us .con input{
+  display: inline-block;
+  width: 115px;
+  box-sizing: border-box;
+  margin-left: 27px;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 14px
 }
