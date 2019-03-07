@@ -119,12 +119,17 @@ a{
   justify-content: space-between;
   text-align: center;
 }
+.main .list__featches{
+  margin-top: 60px;
+  margin-bottom: 85px;
+}
 .list__featches .list,
 .attractions .list{
   width: 400px;
   padding: 0 65px;
   color: #333333;
 }
+
 .list__featches .list{
   padding: 0 50px !important;
 }
@@ -133,11 +138,20 @@ a{
 }
 .list__featches .text,
 .attractions .text{
+  margin-top: 30px;
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
   text-transform: uppercase;
   color: black;
+  margin-bottom: 25px;
+}
+.attractions .text{
+  margin-top: 25px;
+  margin-top: 60px;
+}
+.attractions .description{
+  margin-bottom: 60px;
 }
 .main .interested{
   display: flex;
@@ -167,6 +181,59 @@ a{
   padding: 17px 140px;
   margin-top: 50px;
 }
+.cont{
+  height: 0;
+}
+.footer{
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 100px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: white;
+  position: relative;
+  bottom: 100px;
+  opacity: 0.9;
+
+}
+.footer .hash,
+.footer .Mysik{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.footer .icon{
+  background-color: #81b3d2;
+  padding: 13px 14px;
+}
+.footer .icon__list{
+  width: 150px;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .icon__list .twitter{
+  padding: 16px 14px 13px 15px;
+}
+.footer .icon__list .facebook{
+  padding: 12px 17px 10px 17px;;
+}
+.footer .Mysik{
+color: black;
+}
+.footer .icon__list .youtube{
+  padding: 14px 14px;
+}
+
 
 
 .write-us{
