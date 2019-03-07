@@ -223,13 +223,18 @@
                               <span class="icon__calendar"></span>
                           </label>
                           <div class="con">
-                              <label>
+                              <label class="text">
                                   Взрослые:
-                                  <input class="" type="text" name="vzrozl" value="2">
+                                  <input class="" type="text" name="vzrozl" value="2" maxlength="2">
+                                  <span class="minus">-</span>
+                                  <span class="plus">+</span>
                               </label>
-                              <label>
+                              <label class="text">
                                   Дети:
-                                  <input  type="text" name="child" value="0">
+
+                                  <input type="text" name="child" value="0" maxlength="2">
+                                  <span class="minus">-</span>
+                                  <span class="plus">+</span>
                               </label>
                           </div>
                           <button class="search" type="button" name="button">Найти</button>

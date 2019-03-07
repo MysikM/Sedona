@@ -186,6 +186,7 @@ a{
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 .interested .title{
   font-size: 30px;
@@ -203,9 +204,11 @@ a{
   font-weight: bold;
   text-transform: uppercase;
   line-height: 26px;
-  padding: 17px 140px;
+  padding: 17px 141px;
   margin-top: 50px;
   cursor: pointer;
+  font-size: 21px;
+  line-height: 26px;
 }
 .interested .button:hover,
 .interested .button:focus{
@@ -292,6 +295,10 @@ a{
 .write-us{
     display: block;
     width: 574px;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+    top: 319px;
 }
 .write-us .container{
   display: flex;
@@ -313,6 +320,7 @@ a{
   justify-content: space-between;
   -ms-align-items: center;
   align-items: center;
+  position: relative;
 }
 .write-us .container .input{
   width: 345px;
@@ -321,10 +329,32 @@ a{
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
+  border: 2px solid transparent;
 }
 .write-us .container .input:hover,
-.write-us .container .input:focus{
+.write-us .con input:hover{
   background-color: #ebebeb;
+  border: 2px solid transparent;
+}
+.write-us .container .input:focus,
+.write-us .con input:focus{
+  background-color: white;
+  border: 2px solid #e5e5e5;
+  outline: none;
+}
+.write-us .icon__calendar{
+    position: absolute;
+    width: 37px;
+    height: 38px;
+    background-image: url("../img/calendar.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 10px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+.write-us .icon__calendar:hover{
+  opacity: 1;
 }
 .write-us .container .input::placeholder{
   font-size: 14px;
@@ -356,13 +386,9 @@ a{
   padding: 16px 0 17px;
   cursor: pointer;
 }
-.write-us .container .search:hover{
-  background-color: #669ec0;
-}
-,
+.write-us .container .search:hover,
 .write-us .container .search:focus{
-  background-color: white;
-  border: 2px solid #e5e5e5;
+  background-color: #669ec0;
 }
 .write-us .container .search:active{
   background-color: #5496bd;
@@ -376,5 +402,52 @@ a{
   margin-left: 27px;
   background-color: #f2f2f2;
   border: none;
-  padding: 14px
+  padding: 8px;
+  border: 2px solid transparent;
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  position: relative;
+}
+
+.write-us .con input:focus + .minus{
+  border-right: 2px solid #e5e5e5;
+}
+.write-us .con input:focus +  .minus + .plus{
+  border-left: 2px solid #e5e5e5;
+}
+
+.write-us .con .text{
+  position: relative;
+}
+.write-us .con .minus,
+.write-us .con .plus{
+  position: absolute;
+  padding: 8px;
+  top: 0;
+  right: 0px;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  color: #a9a9a9;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+}
+.write-us .con .minus{
+  right: 81px;
+  z-index: 1;
+  font-size: 40px;
+}
+.write-us .con .minus:hover,
+.write-us .con .plus:hover,
+.write-us .con .minus:focus,
+.write-us .con .plus:focus{
+  opacity: 1;
+  border: 2px solid #e5e5e5;
+}
+.write-us .con .minus:active,
+.write-us .con .plus:active{
+  color: #81b3d2;
 }
