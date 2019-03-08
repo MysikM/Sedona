@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="contain">
-        <header class="header index_header">
+        <header class="header index_header noindex-header">
               <nav class="container1">
                 <ul class="navigation">
                   <li class="list"><a href="#" class="link">Информация</a></li>
@@ -26,49 +26,56 @@
         <main class="main main__hotels">
             <section class="form_input">
               <form class="form" >
-                  <fieldset class="section__form">
+                  <fieldset class="section__form section__form1">
                         <legend class="title">ИНФРАСТРУКТУРА:</legend>
                         <label>
-                            <input type="checkbox" name="" value="" checked>
+                            <input class="checkbox" type="checkbox" name="" value="" checked>
                             <span class="check__box"></span>
                             БАССЕЙН
                         </label>
                         <label>
-                            <input type="checkbox" name="" value="">
+                            <input class="checkbox" type="checkbox" name="" value="">
                             <span class="check__box"></span>
                             ПАРКОВКА
                         </label>
                         <label>
-                            <input type="checkbox" name="" value="">
+                            <input class="checkbox" type="checkbox" name="" value="">
                             <span class="check__box"></span>
                             Wi-Fi
                         </label>
                   </fieldset>
-                  <fieldset class="section__form">
+                  <fieldset class="section__form section__form2">
                       <legend class="title">Тип жилья:</legend>
                       <label>
-                          <input type="checkbox" name="" value="" checked>
+                          <input class="checkbox" type="checkbox" name="" value="" checked>
                           <span class="check__box"></span>
                           ГостиницА
                       </label>
                       <label>
-                          <input type="checkbox" name="" value="" checked>
+                          <input class="checkbox" type="checkbox" name="" value="" checked>
                           <span class="check__box"></span>
                           МОТЕЛЬ
                       </label>
                       <label>
-                          <input type="checkbox" name="" value="" checked>
+                          <input class="checkbox" type="checkbox" name="" value="" checked>
                           <span class="check__box"></span>
                           АПАРТАМЕНТЫ
                       </label>
                   </fieldset>
-                  <fieldset class="section__form">
+                  <div class="box"></div>
+                  <fieldset class="section__form section__form3">
                       <legend class="title">Стоимость в сутки (Р):</legend>
+                      <div class="value">
+                        <span class="min">ОТ 0</span>
+                        <span class="max">ДО 3000</span>
+                      </div>
+                      <span class="line"></span>
 
-                      <button type="button" name="button">Показать</button>
+                      <button class="button" type="button" name="button">Показать</button>
                   </fieldset>
               </form>
             </section>
+
             <section class="search__result">
                   <div class="head">
                         <h3 class="result">Найдено: 3</h3>
