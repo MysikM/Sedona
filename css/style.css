@@ -688,6 +688,99 @@ a{
   opacity: 1;
 }
 
+.search__result .img__list{
+  width: 1056px;
+  margin: 0 auto;
+}
+.search__result .list__item{
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.search__result .item{
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.search__result .item .image{
+  margin-right: 25px;
+}
+.search__result .item .text{
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.search__result .item .title{
+  font-size: 21px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+.search__result .item .text__container{
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 9px;
+}
+.search__result .item .text__container .name{
+  margin-right: 39px;
+}
+.search__result .buttons_container{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+}
+.search__result .buttons_container .link{
+  background-color: #81b3d2;
+  color:  white;
+  text-transform: uppercase;
+  padding: 6px 17px;
+  display: inline-block;
+  margin-right: 6px;
+}
+.search__result .buttons_container .button{
+  border: none;
+  background-color: #766357;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 6px 17px;
+  cursor: pointer;
+  }
+  .search__result .rating{
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .search__result .rating .score__icon{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .search__result .rating .score__icon svg{
+    margin-left: 6px;
+  }
+  .search__result .rating .score{
+    background-color: #f2f2f2;
+    color: #666666;
+    padding: 6px 14px;
+  }
+
 .footer.noindex{
   position: relative;
   bottom: 0;
