@@ -832,8 +832,9 @@ a{
     color: #666666;
     padding: 6px 14px;
   }
-
+.cont.noindex{
+  height: auto;
+}
 .footer.noindex{
-  position: relative;
   bottom: 0;
 }
